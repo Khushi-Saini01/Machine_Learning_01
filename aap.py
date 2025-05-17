@@ -12,12 +12,17 @@ st.set_page_config(page_title="Study Hours vs Scores Predictor", layout="centere
 st.title("Study Hours vs Exam Scores Predictor")
 
 # Load the dataset
+import pandas as pd
+import streamlit as st
+
 @st.cache_data
 def load_data():
-    df = pd.read_csv("hours_vs_scores_100.csv")
+    df = pd.read_csv("hours_vs_scores_100.csv")  
     return df
 
 dataset = load_data()
+st.dataframe(dataset)
+
 st.subheader("Dataset Preview")
 st.dataframe(dataset.head())
 
