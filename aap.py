@@ -14,7 +14,7 @@ st.title("Study Hours vs Exam Scores Predictor")
 # Load the dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\saini\OneDrive\Documents\AI and ML\Machine learning\linear rigression\hours_vs_scores_100.csv")
+    df = pd.read_csv("hours_vs_scores_100.csv")
     return df
 
 dataset = load_data()
