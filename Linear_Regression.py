@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # Load the dataset
-dataset = pd.read_csv("C:\Users\saini\OneDrive\Documents\AI and ML\Machine learning\linear rigression\hours_vs_scores_100.csv")
+dataset = pd.read_csv("hours_vs_scores_100.csv")
 
 # Display first few rows
 print(" First 5 rows of dataset:")
